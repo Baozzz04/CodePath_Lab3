@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="809-Qd-aix">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Forecast View Controller-->
+        <scene sceneID="47u-Q1-tIb">
+            <objects>
+                <viewController id="809-Qd-aix" customClass="ForecastViewController" customModule="CloudCast" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FqG-Ao-npl">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boston, MA" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3zT-tg-4ZE">
+                                <rect key="frame" x="125.33333333333333" y="79" width="142.66666666666669" height="34.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="place-marker" translatesAutoresizingMaskIntoConstraints="NO" id="PYf-Q7-AAz">
+                                <rect key="frame" x="93.333333333333329" y="79" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="cVF-9z-rSr"/>
+                                    <constraint firstAttribute="width" constant="30" id="uFf-9J-jhY"/>
+                                </constraints>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="LSa-eQ-MYO">
+                                <rect key="frame" x="109" y="188.66666666666663" width="175" height="260"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mar 7, 2024" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cID-Ds-8Z6">
+                                        <rect key="frame" x="42.33333333333335" y="0.0" width="90.666666666666686" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="raindrop" translatesAutoresizingMaskIntoConstraints="NO" id="D6I-Ej-apf">
+                                        <rect key="frame" x="0.0" y="28.333333333333343" width="175" height="175"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="175" id="0aA-0s-auO"/>
+                                            <constraint firstAttribute="height" constant="175" id="4sB-8a-gll"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cloudy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZV-qh-XEt">
+                                        <rect key="frame" x="60.666666666666657" y="211.33333333333337" width="53.666666666666657" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="30℉" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PaX-Oo-En6">
+                                        <rect key="frame" x="68.666666666666657" y="239.66666666666666" width="37.666666666666657" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="RXD-CX-Xwe"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3zT-tg-4ZE" firstAttribute="top" secondItem="RXD-CX-Xwe" secondAttribute="top" constant="20" id="1Az-YD-rOc"/>
+                            <constraint firstItem="3zT-tg-4ZE" firstAttribute="centerX" secondItem="FqG-Ao-npl" secondAttribute="centerX" id="2H1-jQ-vzW"/>
+                            <constraint firstItem="LSa-eQ-MYO" firstAttribute="centerX" secondItem="FqG-Ao-npl" secondAttribute="centerX" id="QMm-z6-BcT"/>
+                            <constraint firstItem="LSa-eQ-MYO" firstAttribute="top" secondItem="3zT-tg-4ZE" secondAttribute="bottom" constant="75" id="b4j-s6-hGg"/>
+                            <constraint firstItem="3zT-tg-4ZE" firstAttribute="leading" secondItem="PYf-Q7-AAz" secondAttribute="trailing" constant="2" id="ngS-mr-eEX"/>
+                            <constraint firstItem="PYf-Q7-AAz" firstAttribute="top" secondItem="RXD-CX-Xwe" secondAttribute="top" constant="20" id="sWV-Ir-vN1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="PaX-Oo-En6" id="leT-NG-IFk"/>
+                        <outlet property="descriptionLabel" destination="lZV-qh-XEt" id="mcK-OJ-th2"/>
+                        <outlet property="forecastImageView" destination="D6I-Ej-apf" id="DUF-gy-yCI"/>
+                        <outlet property="locationLabel" destination="3zT-tg-4ZE" id="ySv-Lg-d49"/>
+                        <outlet property="temperatureLabel" destination="PaX-Oo-En6" id="7zF-Yn-baw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="755-M0-259" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25.190839694656489" y="-28.169014084507044"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="place-marker" width="64" height="64"/>
+        <image name="raindrop" width="91" height="91"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
